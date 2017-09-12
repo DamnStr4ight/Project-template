@@ -1,0 +1,31 @@
+%Sammendrag
+%Skal være kort (maks. 1 side)
+%Kort sammendrag av hovedinnholdet i den faglige teksten
+%Skal kunne forstås uavhengig av om man har lest hele den faglige teksten
+%Selv om man skriver på norsk kan det i noen tilfelle være ønskelig med et sammendrag både på norsk og engelsk (evt. et %annet fremmedspråk), spesielt i lengre arbeider
+%Kan inneholde nøkkelord/stikkord
+%Sammendraget er ofte det første som blir lest. Her kan du vekke leserens interesse. Sammendraget skal gi et overblikk over hovedinnholdet, særlig problemstillingen, men det trenger ikke dekke alle aspekter ved oppgaven. Hovedsaken er å gi en god idé om hva oppgaven handler om.Sammendraget skrives gjerne til slutt, når du vet hva du faktisk har skrevet. Det er likevel greit å ha et utkast som du arbeider med underveis. Sammendrag kan være krevende å skrive, fordi du bare kan ta med hovedpoengene i arbeidet ditt. Men nettopp derfor er det veldig nyttig å arbeide med sammendraget – da tvinges du til å finne ut hva du egentlig holder på med.
+
+\makeatletter
+\renewenvironment{abstract}{%
+  \if@twocolumn
+    \section*{\abstractname}%
+  \else
+    \small
+    \begin{center}%
+    
+      {\bfseries\abstractname\vspace{-.5em}\vspace{\z@}}%
+    \end{center}%
+    \quotation
+  \fi}
+  {\if@twocolumn\else\endquotation\fi}
+\makeatother
+
+
+
+
+
+
+\begin{abstract}
+    Sammendrag her
+\end{abstract}
